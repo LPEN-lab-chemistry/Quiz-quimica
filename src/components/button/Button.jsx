@@ -18,5 +18,4 @@ const Button = ({width, height , padding, theme, radius, fontSize, onClick, ...p
   )
 }
 
-
 export default Button
