@@ -1,0 +1,146 @@
+:root {
+    /*Themes*/
+    --theme-white-green: rgb(31, 132, 6);
+    --theme-white-green-hover: rgb(8, 85, 6);
+
+    --theme-green: rgb(10, 106, 10);
+    --theme-green-hover: rgb(7, 74, 7);
+
+    --theme-red: rgb(182, 35, 35);
+    --theme-red-hover: rgb(126, 11, 11);
+
+    --theme-orange: rgb(182, 106, 35);
+    --theme-orange-hover: rgb(126, 68, 11);
+
+
+    /*Themes Border Bottom*/
+    --theme-border-general: 4px solid;
+
+    --theme-border-white-green: rgb(8, 85, 6);
+    --theme-border-white-green-hover: rgb(2, 37, 2);
+
+    --theme-border-green: rgb(7, 74, 7);
+    --theme-border-green-hover: rgb(3, 51, 3);
+
+    --theme-border-red: rgb(126, 11, 11);
+    --theme-border-red-hover: rgb(67, 4, 4);
+
+    --theme-border-orange: rgb(126, 68, 11);
+    --theme-border-orange-hover: rgb(91, 48, 6);
+
+
+    /*width*/
+    --width-small: 110px;
+    --width-medium: 150px;
+    --width-large: 180px;
+
+
+    /*height*/
+    --height-small: 45px;
+    --height-medium: 55px;
+    --height-large: 65px;
+}
+
+
+/*---Buttons globals---*/
+.button {
+    margin: 1em;
+    color: white;
+    cursor: pointer;
+    border-style: none;
+    font-family: 'Lilita One', cursive;
+    box-shadow: -5px -5px 20px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/*---Themes---*/
+.button-theme--white-green {
+    background-color: var(--theme-white-green);
+    border-bottom: var(--theme-border-general) var(--theme-border-white-green);
+}
+
+.button-theme--white-green:hover {
+    background-color: var(--theme-white-green-hover);
+    border-bottom: var(--theme-border-general) var(--theme-border-white-green-hover);
+}
+
+
+.button-theme--green {
+    background-color: var(--theme-green);
+    border-bottom: var(--theme-border-general) var(--theme-border-green);
+}
+
+.button-theme--green:hover {
+    background-color: var(--theme-green-hover);
+    border-bottom: var(--theme-border-general) var(--theme-border-green-hover);
+}
+
+
+.button-theme--orange {
+    background-color: var(--theme-orange);
+    border-bottom: var(--theme-border-general) var(--theme-border-orange);
+}
+
+.button-theme--orange:hover {
+    background-color: var(--theme-orange-hover);
+    border-bottom: var(--theme-border-general) var(--theme-border-orange-hover);
+}
+
+
+.button-theme--red {
+    background-color: var(--theme-red);
+    border-bottom: var(--theme-border-general) var(--theme-border-red);
+}
+
+.button-theme--red:hover {
+    background-color: var(--theme-red-hover);
+    border-bottom: var(--theme-border-general) var(--theme-border-red-hover);
+}
+
+
+/*---width---*/
+.button-width--small {
+    width: var(--width-small);
+}
+
+.button-width--medium {
+    width: var(--width-medium);
+}
+
+.button-width--large {
+    width: var(--width-large);
+}
+
+
+/*---height---*/
+.button-height--small {
+    height: var(--height-small);
+}
+
+.button-height--medium {
+    height: var(--height-medium);
+}
+
+.button-height--large {
+    height: var(--height-large);
+}
+
+
+/*---Font size---*/
+.button-font-size--small {
+    font-size: small;
+}
+
+.button-font-size--medium {
+    font-size: medium;
+}
+
+.button-font-size--large {
+    font-size: large;
+}
