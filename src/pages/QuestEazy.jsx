@@ -1,7 +1,23 @@
 import Button from '../components/button/Button';
 import styles from './QuestEazy.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const QuestEazy = () => {
+
+  const navigate = useNavigate();
+
+  const handleSobre = () => {
+    navigate("/sobre")
+  }
+  const handleTelaInicial = () => {
+    navigate("/")
+  }
+  const handleOutrasPerguntas = () => {
+    navigate("/outrasPerguntas")
+  }
+  const handlePerguntaFacil = () => {
+    navigate("/perguntaFacil")
+  }
 
   return (
     <div className={styles.questEazy}>
@@ -43,16 +59,16 @@ const QuestEazy = () => {
 
         <div className={styles.nav}>
           <div className={styles.impar}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Sobre</Button>
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handleSobre}>Sobre</Button>
           </div>
           <div className={styles.par}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Tela Inicial</Button>
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handleTelaInicial}>Tela Inicial</Button>
           </div>
           <div className={styles.impar}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Outras Perguntas</Button>
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handleOutrasPerguntas}>Outras Perguntas</Button>
           </div>
           <div className={styles.par}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Criar Conta</Button>
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handlePerguntaFacil}>Criar Conta</Button>
           </div>
         </div>
       </div>

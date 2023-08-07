@@ -1,7 +1,31 @@
 import Button from '../components/button/Button';
 import styles from './Quests.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const Quests = () => {
+
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/conta")
+  }
+  const handleSobre = () => {
+    navigate("/sobre")
+  }
+  const handleTelaInicial = () => {
+    navigate("/")
+  }
+
+
+  const handlePerguntaFacil = () => {
+    navigate("/perguntaFacil")
+  }
+  const handlePerguntaMedio = () => {
+    navigate("/perguntaMedio")
+  }
+  const handlePerguntaDificil = () => {
+    navigate("/perguntaDificil")
+  }
 
 
   return (
@@ -10,9 +34,9 @@ const Quests = () => {
         <h1 className={styles.title}>Modos</h1>
 
         <div className={styles.nav}>
-          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick="history.pushState({}, null, conta)">Criar Conta</Button>
-          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick="history.pushState({}, null, conta)">Tela Inicial</Button>
-          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick="history.pushState({}, null, conta)">Sobre</Button>
+          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick={handleLogin}>Criar Conta</Button>
+          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick={handleTelaInicial}>Tela Inicial</Button>
+          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick={handleSobre}>Sobre</Button>
         </div>
       </div>
 
@@ -22,19 +46,19 @@ const Quests = () => {
 
         <table>
           <tr>
-            <td><Button width="small" height="medium" theme="green" fontSize="large" onClick="history.pushState({}, null, conta)">Fácil</Button></td>
+            <td><Button width="small" height="medium" theme="green" fontSize="large" onClick={handlePerguntaFacil}>Fácil</Button></td>
             <td><p className={styles.seta}>➜</p></td>
             <td><p>Perguntas sobre X</p></td>
           </tr>
 
           <tr>
-            <td><Button width="small" height="medium" theme="orange" fontSize="large" onClick="history.pushState({}, null, conta)">Médio</Button></td>
+            <td><Button width="small" height="medium" theme="orange" fontSize="large" onClick={handlePerguntaMedio}>Médio</Button></td>
             <td><p className={styles.seta}>➜</p></td>
             <td><p>Perguntas sobre Y</p></td>
           </tr>
 
           <tr>
-            <td><Button width="small" height="medium" theme="red" fontSize="large" onClick="history.pushState({}, null, conta)">Difícil</Button></td>
+            <td><Button width="small" height="medium" theme="red" fontSize="large" onClick={handlePerguntaDificil}>Difícil</Button></td>
             <td><p className={styles.seta}>➜</p></td>
             <td><p>Perguntas sobre Z</p></td>
           </tr>
