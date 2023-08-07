@@ -1,7 +1,7 @@
 import React from 'react';
 import LoginCadastroForm from '../components/input/LoginCadastroForm';
 import Button from '../components/button/Button';
-import './Login.css';
+import './Login.css'; //poderia ser modules e dentro do style
 
 function Login() {
   return (
