@@ -5,7 +5,7 @@ const Quests = () => {
 
 
   return (
-    <div className={styles.box}>
+    <div className={styles.quests}>
       <div className={styles.header}>
         <h1 className={styles.title}>Modos</h1>
 

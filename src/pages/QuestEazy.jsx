@@ -1,47 +1,63 @@
 import Button from '../components/button/Button';
-import styles from './Quests.module.css';
+import styles from './QuestEazy.module.css';
 
-const Quests = () => {
-
+const QuestEazy = () => {
 
   return (
-    <div className={styles.box}>
+    <div className={styles.questEazy}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Modos</h1>
 
-        <div className={styles.nav}>
-          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick="history.pushState({}, null, conta)">Criar Conta</Button>
-          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick="history.pushState({}, null, conta)">Tela Inicial</Button>
-          <Button width="medium" height="small" theme="white-green" fontSize="medium" onClick="history.pushState({}, null, conta)">Sobre</Button>
+        <div className={styles.imageDiv}>
+          <img className={styles.image} width="50px" src="src\assets/logo.png" alt="Imagem logo mico" />
+        </div>
+
+        <div className={styles.titleDiv}>
+          <h1 className={styles.title}>Pergunta X (modelo fácil)</h1>
         </div>
       </div>
 
+
       <div className={styles.body}>
+        <div className={styles.quest}>
+          <table>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
 
-        <img className={styles.image} width="140px" src="src\assets/logo.png" alt="Imagem logo mico" />
+            <tr>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+            </tr>
 
-        <table>
-          <tr>
-            <td><Button width="small" height="medium" theme="green" fontSize="large" onClick="history.pushState({}, null, conta)">Fácil</Button></td>
-            <td><p className={styles.seta}>➜</p></td>
-            <td><p>Perguntas sobre X</p></td>
-          </tr>
+            <tr>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+            </tr>
+          </table>
+        </div>
 
-          <tr>
-            <td><Button width="small" height="medium" theme="orange" fontSize="large" onClick="history.pushState({}, null, conta)">Médio</Button></td>
-            <td><p className={styles.seta}>➜</p></td>
-            <td><p>Perguntas sobre Y</p></td>
-          </tr>
-
-          <tr>
-            <td><Button width="small" height="medium" theme="red" fontSize="large" onClick="history.pushState({}, null, conta)">Difícil</Button></td>
-            <td><p className={styles.seta}>➜</p></td>
-            <td><p>Perguntas sobre Z</p></td>
-          </tr>
-        </table>
+        <div className={styles.nav}>
+          <div className="impar">
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Sobre</Button>
+          </div>
+          <div className="par">
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Tela Inicial</Button>
+          </div>
+          <div className="impar">
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Outras Perguntas</Button>
+          </div>
+          <div className="par">
+            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Criar Conta</Button>
+          </div>
+        </div>
       </div>
+
     </div>
   )
 }
 
-export default Quests
+export default QuestEazy

@@ -4,7 +4,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.box {
+.quests {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(90deg, rgb(38, 90, 101), rgba(60, 133, 170, 1));
