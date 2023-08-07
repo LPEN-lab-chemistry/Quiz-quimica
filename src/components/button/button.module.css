@@ -30,15 +30,15 @@
 
 
     /*width*/
-    --width-small: 110px;
-    --width-medium: 150px;
-    --width-large: 180px;
+    --width-small: 140px;
+    --width-medium: 180px;
+    --width-large: 220px;
 
 
     /*height*/
-    --height-small: 45px;
-    --height-medium: 55px;
-    --height-large: 65px;
+    --height-small: 50px;
+    --height-medium: 60px;
+    --height-large: 70px;
 }
 
 
@@ -49,7 +49,7 @@
     cursor: pointer;
     border-style: none;
     font-family: 'Lilita One', cursive;
-    box-shadow: -5px -5px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: -3px -3px 15px 0px rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     transition: 1s;
 }

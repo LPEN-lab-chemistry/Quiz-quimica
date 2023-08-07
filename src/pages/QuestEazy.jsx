@@ -8,7 +8,7 @@ const QuestEazy = () => {
       <div className={styles.header}>
 
         <div className={styles.imageDiv}>
-          <img className={styles.image} width="50px" src="src\assets/logo.png" alt="Imagem logo mico" />
+          <img className={styles.image} width="90px" src="src\assets/logo.png" alt="Imagem logo mico" />
         </div>
 
         <div className={styles.titleDiv}>
@@ -39,18 +39,19 @@ const QuestEazy = () => {
             </tr>
           </table>
         </div>
+        {/* cards */}
 
         <div className={styles.nav}>
-          <div className="impar">
+          <div className={styles.impar}>
             <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Sobre</Button>
           </div>
-          <div className="par">
+          <div className={styles.par}>
             <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Tela Inicial</Button>
           </div>
-          <div className="impar">
+          <div className={styles.impar}>
             <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Outras Perguntas</Button>
           </div>
-          <div className="par">
+          <div className={styles.par}>
             <Button width="large" height="medium" theme="white-green" fontSize="large" onClick="history.pushState({}, null, conta)">Criar Conta</Button>
           </div>
         </div>

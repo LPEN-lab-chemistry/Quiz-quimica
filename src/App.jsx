@@ -11,10 +11,10 @@ function App() {
       <BrowserRouter basename="/quiz-quimica">
         <Routes>
           {/* <Route element={<Home />} path="/" /> */} {/* não feito */}
-          <Route element={<Login />} path="/conta" /> {/* Giu */}
+          <Route element={<Login />} path="/conta" /> 
           {/* <Route element={<About />} path="/sobre" /> */} {/* não feito */}
-          <Route element={<Quests />} path="/outras-perguntas" /> {/* Hudson */}
-          <Route element={<QuestEazy />} path="/pergunta-facil" /> {/* Hudson */}
+          <Route element={<Quests />} path="/outras-perguntas" /> 
+          <Route element={<QuestEazy />} path="/pergunta-facil" />
           {/* <Route element={<Quest-medium />} path="/pergunta-media" /> */} {/* não feito */}
           {/* <Route element={<Quest-hard />} path="/pergunta-dificil" /> */} {/* não feito */}
         </Routes>
