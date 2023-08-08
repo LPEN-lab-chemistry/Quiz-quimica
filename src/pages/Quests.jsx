@@ -44,25 +44,25 @@ const Quests = () => {
 
         <img className={styles.image} width="140px" src="src\assets/logo.png" alt="Imagem logo mico" />
 
-        <table>
-          <tr>
-            <td><Button width="small" height="medium" theme="green" fontSize="large" onClick={handlePerguntaFacil}>Fácil</Button></td>
-            <td><p className={styles.seta}>➜</p></td>
-            <td><p>Perguntas sobre X</p></td>
-          </tr>
+        <div className={styles.table}>
+          <div className={styles.tr}>
+            <div className={styles.td}><Button width="small" height="medium" theme="green" fontSize="large" onClick={handlePerguntaFacil}>Fácil</Button></div>
+            <div className={styles.td}><p className={styles.seta}>➜</p></div>
+            <div className={styles.td}><p>Perguntas sobre X</p></div>
+          </div>
 
-          <tr>
-            <td><Button width="small" height="medium" theme="orange" fontSize="large" onClick={handlePerguntaMedio}>Médio</Button></td>
-            <td><p className={styles.seta}>➜</p></td>
-            <td><p>Perguntas sobre Y</p></td>
-          </tr>
+          <div className={styles.tr}>
+            <div className={styles.td}><Button width="small" height="medium" theme="orange" fontSize="large" onClick={handlePerguntaMedio}>Médio</Button></div>
+            <div className={styles.td}><p className={styles.seta}>➜</p></div>
+            <div className={styles.td}><p>Perguntas sobre Y</p></div>
+          </div>
 
-          <tr>
-            <td><Button width="small" height="medium" theme="red" fontSize="large" onClick={handlePerguntaDificil}>Difícil</Button></td>
-            <td><p className={styles.seta}>➜</p></td>
-            <td><p>Perguntas sobre Z</p></td>
-          </tr>
-        </table>
+          <div className={styles.tr}>
+            <div className={styles.td}><Button width="small" height="medium" theme="red" fontSize="large" onClick={handlePerguntaDificil}>Difícil</Button></div>
+            <div className={styles.td}><p className={styles.seta}>➜</p></div>
+            <div className={styles.td}><p>Perguntas sobre Z</p></div>
+          </div>
+        </div>
       </div>
     </div>
   )
