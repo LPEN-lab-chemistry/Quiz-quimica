@@ -16,10 +16,10 @@ const LoginCadastroForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isLoginMode) {
-  
+
       console.log('Login com:', email, password);
     } else {
-    
+
       console.log('Cadastro com:', email, password);
     }
   };
@@ -31,14 +31,14 @@ const LoginCadastroForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <h2>{isLoginMode ? 'Login' : 'Cadastro'}</h2>
-      <label>
-        Email:
-        <input type="email" value={email} onChange={handleEmailChange} />
-      </label>
-      <label>
-        Senha:
-        <input type="password" value={password} onChange={handlePasswordChange} />
-      </label>
+      <div className='inputslogin'>
+        <label>
+          <input type="email" value={email} onChange={handleEmailChange} placeholder="Email" />
+        </label>
+        <label>
+          <input type="password" value={password} onChange={handlePasswordChange} placeholder="Senha" />
+        </label>
+      </div>
       <button type="submit">{isLoginMode ? 'Entrar' : 'Cadastrar'}</button>
       <p>
         {isLoginMode ? 'Ainda não tem uma conta?' : 'Já possui uma conta?'}

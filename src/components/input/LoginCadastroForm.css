@@ -2,51 +2,17 @@ form {
     max-width: 300px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  h2 {
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input {
+  .inputslogin input {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 14px;
+    border-radius: 100px 0px 100px 100px;
+    background-color: rgba(10, 55, 92, 1);;
+    margin-bottom: 2vh;
   }
-  
-  button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  p {
-    text-align: center;
-  }
-  
-  button.toggle-mode {
-    background-color: transparent;
-    border: none;
-    color: #007bff;
-    text-decoration: underline;
-    cursor: pointer;
+  .inputslogin input::placeholder {
+    color: rgb(205, 202, 202);
+    font-size: 18px; 
   }

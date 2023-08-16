@@ -5,8 +5,6 @@ const Button = ({width, height , padding, theme, radius, fontSize, onClick, ...p
         button: styles.button,
         height: styles[`button-height--${height}`],
         width: styles[`button-width--${width}`],
-        padding: styles[`button-padding--${padding}`],
-        radius: styles[`button-radius--${radius}`],
         theme: styles[`button-theme--${theme}`],
         font: styles[`button-font-size--${fontSize}`]
     }
