@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './LoginCadastroForm.css';
 const LoginCadastroForm = () => {
   const [email, setEmail] = useState('');

@@ -1,9 +1,8 @@
-import React from 'react';
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 import './App.css';
-import Login from './pages/Login';
-import Quests from './pages/Quests';
-import QuestEazy from './pages/QuestEazy';
+import Login from './pages/login/Login';
+import Quests from './pages/quests/Quests';
+import QuestEazy from './pages/questEazy/QuestEazy';
 
 function App() {
   return (

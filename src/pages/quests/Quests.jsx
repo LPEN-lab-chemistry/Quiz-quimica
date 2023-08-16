@@ -1,4 +1,4 @@
-import Button from '../components/button/Button';
+import Button from '../../components/button/Button';
 import styles from './Quests.module.css';
 import { useNavigate } from 'react-router-dom';
 
