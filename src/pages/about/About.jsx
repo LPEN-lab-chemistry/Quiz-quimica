@@ -1,16 +1,11 @@
-import styles from "./StartFrame.module.css";
+import styles from "./About.module.css";
 import Button from "../../components/button/Button";
 import { useNavigate } from "react-router-dom";
 
-const StartFrame = () => {
+const About = () => {
   const navigate = useNavigate();
-
-  const handleLogin = () => {
-    navigate("/conta");
-  };
-
-  const handleAbout = () => {
-    navigate("/sobre");
+  const handleBack = () => {
+    navigate("/");
   };
 
   return (
@@ -20,10 +15,10 @@ const StartFrame = () => {
         <div className={styles["right"]}>
           <div className={styles["button-sobre"]}>
             <Button
-              onClick={handleAbout}
+              onClick={handleBack}
               width="small"
               height="small"
-              theme="orange"
+              theme="red"
               fontSize="large"
             >
               Sobre
@@ -31,27 +26,21 @@ const StartFrame = () => {
           </div>
         </div>
       </header>
-      <div className={styles["container-center"]}>
+      <div className={styles["center-container"]}>
         <div className={styles["logo-area"]}>
           <img src="src\assets/logo.png" alt="Imagem logo mico" />
         </div>
-        <div className={styles["buttons-area"]}>
-          <Button
-            onClick={handleLogin}
-            width="large"
-            height="small"
-            theme="white-green"
-            fontSize="large"
-          >
-            Começar agora
-          </Button>
-          <Button width="large" height="small" theme="orange" fontSize="large">
-            Criar uma conta
-          </Button>
+        <div className={styles["card"]}>
+          <p>
+            Responda às perguntas corretamente para avançar e conquistar níveis
+            cada vez mais desafiadores. Com uma interface amigável e ilustrações
+            vibrantes, nosso jogo de química proporciona uma experiência de
+            aprendizado divertida e eficaz.
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default StartFrame;
+export default About;

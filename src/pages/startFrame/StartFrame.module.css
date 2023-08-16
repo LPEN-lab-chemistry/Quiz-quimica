@@ -20,17 +20,6 @@
     color: white;
 }
 
-.container-center {
-    display: flex;
-    flex-direction: row;
-}
-
-.buttons-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .logo-area {
     width: 12em;
     height: 12em;
@@ -43,4 +32,13 @@
     height: 12em;
 }
 
+.container-center {
+    display: flex;
+    flex-direction: row;
+}
 
+.buttons-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
