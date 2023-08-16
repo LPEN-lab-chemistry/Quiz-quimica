@@ -1,5 +1,7 @@
 import styles from "./StartFrame.module.css";
 import Button from "../../components/button/Button";
+import logo from "../../assets/logo.png";
+
 import { useNavigate } from "react-router-dom";
 
 const StartFrame = () => {
@@ -33,7 +35,7 @@ const StartFrame = () => {
       </header>
       <div className={styles["container-center"]}>
         <div className={styles["logo-area"]}>
-          <img src="src\assets/logo.png" alt="Imagem logo mico" />
+          <img src={logo} alt="Imagem logo mico" />
         </div>
         <div className={styles["buttons-area"]}>
           <Button
