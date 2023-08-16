@@ -1,5 +1,6 @@
 import Button from "../../components/button/Button";
 import styles from "./Login.module.css";
+import logo from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -39,7 +40,7 @@ function Login() {
         </div>
       </header>
       <div className={styles["logo-container"]}>
-        <img src="src\assets/logo.png" alt="Imagem logo mico" />
+        <img src={logo} alt="Imagem logo mico" />
       </div>
       <form onSubmit={handleSubmit}>
         <div className={styles["inputslogin"]}>

@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
 import Button from "../../components/button/Button";
+import logo from "../../assets/logo.png";
 import { useNavigate } from "react-router-dom";
 
 const About = () => {
@@ -28,7 +29,7 @@ const About = () => {
       </header>
       <div className={styles["center-container"]}>
         <div className={styles["logo-area"]}>
-          <img src="src\assets/logo.png" alt="Imagem logo mico" />
+          <img src={logo} alt="Imagem logo mico" />
         </div>
         <div className={styles["card"]}>
           <p>
