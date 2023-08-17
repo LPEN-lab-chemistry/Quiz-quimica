@@ -42,7 +42,7 @@ function Login() {
       <div className={styles["logo-container"]}>
         <img src={logo} alt="Imagem logo mico" />
       </div>
-      <form onSubmit={handleSubmit}>
+      <div className={styles["form"]}>
         <div className={styles["inputslogin"]}>
           <label>
             <input
@@ -62,6 +62,7 @@ function Login() {
           </label>
         </div>
         <Button
+          onClick={handleSubmit}
           width="small"
           height="small"
           theme="white-green"
@@ -69,7 +70,7 @@ function Login() {
         >
           Logar
         </Button>
-      </form>
+      </div>
     </div>
   );
 }

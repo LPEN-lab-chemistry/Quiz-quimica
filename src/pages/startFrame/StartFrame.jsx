@@ -47,7 +47,13 @@ const StartFrame = () => {
           >
             Começar agora
           </Button>
-          <Button width="large" height="small" theme="orange" fontSize="large">
+          <Button
+            onClick={handleLogin}
+            width="large"
+            height="small"
+            theme="orange"
+            fontSize="large"
+          >
             Criar uma conta
           </Button>
         </div>

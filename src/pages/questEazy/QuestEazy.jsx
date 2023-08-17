@@ -1,30 +1,29 @@
-import Button from '../../components/button/Button';
-import styles from './QuestEazy.module.css';
-import { useNavigate } from 'react-router-dom';
+import Button from "../../components/button/Button";
+import styles from "./QuestEazy.module.css";
+import logo from "../../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 const QuestEazy = () => {
-
   const navigate = useNavigate();
 
   const handleSobre = () => {
-    navigate("/sobre")
-  }
+    navigate("/sobre");
+  };
   const handleTelaInicial = () => {
-    navigate("/")
-  }
+    navigate("/");
+  };
   const handleOutrasPerguntas = () => {
-    navigate("/outrasPerguntas")
-  }
+    navigate("/outrasPerguntas");
+  };
   const handlePerguntaFacil = () => {
-    navigate("/perguntaFacil")
-  }
+    navigate("/perguntaFacil");
+  };
 
   return (
     <div className={styles.questEazy}>
       <div className={styles.header}>
-
-        <div className={styles.imageDiv}>
-          <img className={styles.image} width="90px" src="src\assets/logo.png" alt="Imagem logo mico" />
+        <div className={styles["logo-container"]}>
+          <img src={logo} alt="Imagem logo mico" />
         </div>
 
         <div className={styles.titleDiv}>
@@ -32,49 +31,58 @@ const QuestEazy = () => {
         </div>
       </div>
 
-
       <div className={styles.body}>
-        <div className={styles.quest}>
-          <table>
-            <tr>
-              <td>1</td>
-              <td>2</td>
-              <td>3</td>
-            </tr>
-
-            <tr>
-              <td>4</td>
-              <td>5</td>
-              <td>6</td>
-            </tr>
-
-            <tr>
-              <td>7</td>
-              <td>8</td>
-              <td>9</td>
-            </tr>
-          </table>
-        </div>
         {/* cards */}
 
         <div className={styles.nav}>
           <div className={styles.impar}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handleSobre}>Sobre</Button>
+            <Button
+              width="large"
+              height="medium"
+              theme="white-green"
+              fontSize="large"
+              onClick={handleSobre}
+            >
+              Sobre
+            </Button>
           </div>
           <div className={styles.par}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handleTelaInicial}>Tela Inicial</Button>
+            <Button
+              width="large"
+              height="medium"
+              theme="white-green"
+              fontSize="large"
+              onClick={handleTelaInicial}
+            >
+              Tela Inicial
+            </Button>
           </div>
           <div className={styles.impar}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handleOutrasPerguntas}>Outras Perguntas</Button>
+            <Button
+              width="large"
+              height="medium"
+              theme="white-green"
+              fontSize="large"
+              onClick={handleOutrasPerguntas}
+            >
+              Outras Perguntas
+            </Button>
           </div>
           <div className={styles.par}>
-            <Button width="large" height="medium" theme="white-green" fontSize="large" onClick={handlePerguntaFacil}>Criar Conta</Button>
+            <Button
+              width="large"
+              height="medium"
+              theme="white-green"
+              fontSize="large"
+              onClick={handlePerguntaFacil}
+            >
+              Criar Conta
+            </Button>
           </div>
         </div>
       </div>
-
     </div>
-  )
-}
+  );
+};
 
-export default QuestEazy
+export default QuestEazy;
